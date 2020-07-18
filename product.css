@@ -1,0 +1,33 @@
+body
+{
+	background-color: rgb(166, 166, 166);
+}
+form
+{
+	background-color: rgb(255, 102, 102);
+	height: 450px;
+	width: 450px;
+	margin-left: 400px;
+	padding-left: 150px;
+	padding-top: 150px;
+}
+
+
+input[type=submit]
+{
+	color: #4CAF50;
+	cursor: pointer;
+}
+
+input[type=text],[type=number]
+{
+	border-bottom-color: rgb(179, 0, 59);
+	border-top: none;
+	border-left: none;
+	border-right:none; 
+}
+a
+{
+	color: rgb(100,0,115);
+	font-family: arial;
+}

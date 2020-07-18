@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Form validation from Client Server
+	</title>
+	<link rel="stylesheet" type="text/css" href="form-style.css">
+	<script type="text/javascript" src="form.js">
+	</script>
+</head>
+<body>
+	<p>
+		<div class="Text">Student Profile</div>
+	</p>
+	<div class="frm">
+		<form method="post" action="form.php" name = "ff" onsubmit="return valid()">
+		Name:<br>
+		<input type="text" id="Name" name="name" placeholder="Your academic name.." ><br>
+		Roll Number:<br>
+		<input id="roll" name="roll" placeholder="Your roll number..."><br>
+		Registration Number:<br>
+		<input id="reg" name="reg" placeholder="Registration Number..."><br>
+		Phone Number:<br>
+		<input type="text" id="phn" name="phn" placeholder="Your 11 digit phone number..."><br>
+		Date of birth:<br>
+		<input type="Date" name="db">
+		<br>
+		Blood Group:<br>
+		<select name="bld" id = "bld">
+			<option>
+				O+
+			</option>
+			<option>
+				O-
+			</option>
+			<option>
+				Ab+
+			</option>
+			<option>
+				Ab-
+			</option>
+			<option>
+				A+
+			</option>
+			<option>
+				A-
+			</option>
+			<option>
+				B+
+			</option>
+			<option>
+				B-
+			</option>
+		</select>
+		<br>
+		Departement:<br>
+		<select id="dept" name="dept">
+			<option>
+				Computer Science & Engineering
+			</option>
+			<option>
+				Electrical & Electronic Engineering
+			</option>
+			<option>
+				Enviornmental Science & Engineering
+			</option>
+		</select><br><br><br>
+		<input type="submit">
+	</form>
+	<br><br>
+	<p id="wrt">
+		
+	</p>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,30 @@
+.frm
+{
+	background-color: #f2f2f2;
+	border:1px solid #9c1e28;
+	margin:50px 500px;
+	width: 500px;
+	height: 300px;
+	padding: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius:5px;
+}
+
+h1
+{
+	color: blue;
+	font-size: 2000px;
+}
+
+.Text
+{
+	color: red;
+	border:2px solid blue;
+	margin: 10px 20px;
+	font-family: arial;
+	border-color: 1px solid blue;
+	border-radius: 50px;
+	text-align: center;
+	padding-top:10px;
+}

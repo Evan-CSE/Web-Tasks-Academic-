@@ -2,77 +2,88 @@
 <html>
 <head>
 	<title>
-		Form validation from Client Server
+		Employee's Profile
 	</title>
-	<link rel="stylesheet" type="text/css" href="form-style.css">
-	<script type="text/javascript" src="form.js">
-	</script>
+	<link rel = "stylesheet" type = "text/css" href = "form.css">
+	
 </head>
 <body>
-	<p>
-		<div class="Text">Student Profile</div>
-	</p>
-	<div class="frm">
-		<form method="post" action="form.php" name = "ff" onsubmit="return valid()">
-		Name:<br>
-		<input type="text" id="Name" name="name" placeholder="Your academic name.." ><br>
-		Roll Number:<br>
-		<input id="roll" name="roll" placeholder="Your roll number..."><br>
-		Registration Number:<br>
-		<input id="reg" name="reg" placeholder="Registration Number..."><br>
-		Phone Number:<br>
-		<input type="text" id="phn" name="phn" placeholder="Your 11 digit phone number..."><br>
-		Date of birth:<br>
-		<input type="Date" name="db">
+	<marquee direction="left">
+		<b>Problem Statement: </b> Write a PHP program that will store all data in a database retrieving from a form
+														containing employee’s profile.
+	</marquee>
+	<center><form  method="POST" action="action.php">
+	
+		<h3>
+			Personal Information
+		</h3>
 		<br>
-		Blood Group:<br>
-		<select name="bld" id = "bld">
-			<option>
-				O+
-			</option>
-			<option>
-				O-
-			</option>
-			<option>
-				Ab+
-			</option>
-			<option>
-				Ab-
-			</option>
-			<option>
-				A+
-			</option>
-			<option>
-				A-
-			</option>
-			<option>
-				B+
-			</option>
-			<option>
-				B-
-			</option>
-		</select>
+		Enter your name:
 		<br>
-		Departement:<br>
-		<select id="dept" name="dept">
-			<option>
-				Computer Science & Engineering
-			</option>
-			<option>
-				Electrical & Electronic Engineering
-			</option>
-			<option>
-				Enviornmental Science & Engineering
-			</option>
-		</select><br><br><br>
+		<input type = "txt" name="name" >
+	<br>
+		<td>Enter Employee Id:
+	<br>
+			<input type="number" name = "id">
+		<br>
+			Enter your Phone number:
+		<br>
+			<input type = "tel" name = "phn">
+	<br>
+		Select blood group
+	<br>
+	<select name="blood" name="bld">
+		<option>
+			O+
+		</option>
+		<option>
+			O-
+		</option>
+		<option>
+			A+
+		</option>
+		<option>
+			A-
+		</option>
+		<option>
+			Ab+
+		</option>
+		<option>
+			Ab-
+		</option>
+		<option>
+			B+
+		</option>
+		<option>
+			B-
+		</option>
+	</select>
+	<br>
+			Enter date of birth:
+		<br>
+			<input type = "date" name="db">
+		<br>
+		<h4>
+			Family related Information
+		<h4><br>
+		Enter father's name:
+	<br>
+	<input type="name" name="fname">
+	<br>
+			Enter Mother's name:
+		<br>
+			<input type ="text" name = "mname">
+		<br>
+		Type Permanent Address:
+		<br>
+			<input type="text" name="pa" placeholder="PO,Upazilla,Zilla">
+		<br>
+			Enter Present address:
+		<br>
+			<input type="text" name="pra" placeholder="PO,Upazilla,Zilla">
+		<br>
 		<input type="submit">
-	</form>
-	<br><br>
-	<p id="wrt">
-		
-	</p>
-	</div>
-	
-	
+		</form>
+	</center>
 </body>
 </html>

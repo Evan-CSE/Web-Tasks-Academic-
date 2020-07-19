@@ -1,89 +1,68 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>
-		Employee's Profile
-	</title>
-	<link rel = "stylesheet" type = "text/css" href = "form.css">
-	
-</head>
-<body>
-	<marquee direction="left">
-		<b>Problem Statement: </b> Write a PHP program that will store all data in a database retrieving from a form
-														containing employee’s profile.
-	</marquee>
-	<center><form  method="POST" action="action.php">
-	
-		<h3>
-			Personal Information
-		</h3>
-		<br>
-		Enter your name:
-		<br>
-		<input type = "txt" name="name" >
-	<br>
-		<td>Enter Employee Id:
-	<br>
-			<input type="number" name = "id">
-		<br>
-			Enter your Phone number:
-		<br>
-			<input type = "tel" name = "phn">
-	<br>
-		Select blood group
-	<br>
-	<select name="blood" name="bld">
-		<option>
-			O+
-		</option>
-		<option>
-			O-
-		</option>
-		<option>
-			A+
-		</option>
-		<option>
-			A-
-		</option>
-		<option>
-			Ab+
-		</option>
-		<option>
-			Ab-
-		</option>
-		<option>
-			B+
-		</option>
-		<option>
-			B-
-		</option>
-	</select>
-	<br>
-			Enter date of birth:
-		<br>
-			<input type = "date" name="db">
-		<br>
-		<h4>
-			Family related Information
-		<h4><br>
-		Enter father's name:
-	<br>
-	<input type="name" name="fname">
-	<br>
-			Enter Mother's name:
-		<br>
-			<input type ="text" name = "mname">
-		<br>
-		Type Permanent Address:
-		<br>
-			<input type="text" name="pa" placeholder="PO,Upazilla,Zilla">
-		<br>
-			Enter Present address:
-		<br>
-			<input type="text" name="pra" placeholder="PO,Upazilla,Zilla">
-		<br>
-		<input type="submit">
-		</form>
-	</center>
-</body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<form method="post" action="show.php">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="text" name="phn"></td>
+			</tr>
+			<tr>
+				<td>Department</td>
+				<td>
+					<select name="dept">
+					<option>CSE</option>
+					<option>EEE</option>
+					<option>ESE</option>
+				</td>
+			</tr>
+				<tr>
+				<td>Blood Group</td>
+				<td>
+					<select name="bld">
+					<option>A+</option>
+					<option>A-</option>
+					<option>AB+</option>
+					<option>AB-</option>
+					<option>B-</option>
+					<option>B+</option>
+					<option>O+</option>
+					<option>O-</option>
+				</td>
+			</tr>
+			<tr>
+				<td>Date of birth:</td>
+				<td><input type="date" name="db"></td>
+			</tr>
+			<tr>
+				<td>
+					Gender:
+				</td>
+				<td>
+					<select name="gender">
+						<option>Male</option>
+						<option> Female</option>
+						<option> Not prefered to say</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Write about yourself:</td>
+				<td><input type="comment" name="profile"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit">
+				</td>
+			</tr>
+		</table>
+	</form>
+	</body>
 </html>

@@ -1,86 +1,74 @@
-function NameInvalid(name)
+function Vname(name)
 {
-	for (var i = 0; i < name.length; i++) {
-		if(!(name[i].toLowerCase()!=name[i].toUpperCase()))
-			return false;
-	}
-	return true;
+	if(name.length==0)
+{
+	alert("Enter valid  format");
+	return false;
 }
 
-
-function IsNumber(num)
-{
-	for (var i = 0; i < num.length; i++) {
-		if(num[i]>='0' && num[i]<='9')
+	for(var i=0;i<name.length;i++){
+		if((name[i]>='a' && name[i]<='z') || (name[i]>='A' && name[i]<='Z'))
 			continue;
 		else
+		{
+			alert("Enter valid format");
 			return false;
-	}
+		}
+}
 	return true;
 }
 
 
-function validPhone(num)
+
+function Mail(mail)
 {
-	if(num.length!=11 || num[0]!='0' || num[1]!='1')
+	//alert(mail);
+	for(var i=0;i<mail.length;i++)
+		if(mail[i]=='@')
+			return true;
+	alert("Enter correct format");
+	return false;
+	
+}
+
+
+
+function Phone(phn)
+{
+	if(phn[0]!='0' || phn[1]!='1' || (phn[2]!='8' && phn[2]!='7' && phn[2]!='6' && phn[2]!='4' && phn[2]!='5' && phn[2]!='3') || phn.length!=11)
+		{
+			alert("Enter valid phone number");
 		return false;
-	for (var i = 0; i < num.length; i++) {
-		if(num[i]>='0' && num[i]<='9')
-			continue;
-		else
-			return false;
 	}
 	return true;
 }
 
-
-function validDate(date)
-{
-	if(date=="")
-		return false;
-	for (var i = 0; i < date.length; i++) {
-		if(date[i]=='/')
-			continue;
-		else if(date[i]>='0' && date[i]<='9')
-			continue;
-		else
-			return false;
-	}
-	return true;
-}
 
 
 function valid()
 {
-	var name = document.forms["ff"]["Name"].value;
-	if(name=="" || !NameInvalid(name))
-	{
-		alert("Name must contain letters");
+	//alert("Called");
+	var name = document.forms["frm"]["nm"].value;
+	var lc = document.forms["frm"]["loc"].value;
+	var age = document.forms["frm"]["age"].value;
+	var mail = document.forms["frm"]["mail"].value;
+	if(!Vname(name))
+		return false;
+	if(!Vname(lc) || lc.length==0)
+		return false;
+	if(age==0){
+		alert("Enter valid age")
+		return false;}
+	if(!Mail(mail))
+		return false;
+	if(!Phone(document.forms["frm"]["num"].value))
+		return false;
+	if(document.forms["frm"]["db"].value.length==0){
+		alert("Enter date of birth");
 		return false;
 	}
-	var r = document.forms["ff"]["roll"].value;
-	if(!IsNumber(r))
-	{
-		alert("Roll should be a number");
+	if(!Vname(document.forms["frm"]["hmd"].value))
 		return false;
-	}
-	var Rg = document.forms["ff"]["reg"].value;
-	if(!IsNumber(Rg))
-	{
-		alert("Registration number must contain digits");
-		return false;
-	}
-	var phn = document.forms["ff"]["phn"].value;
-	if(!validPhone(phn))
-	{
-		alert("Enter a valid phone number");
-		return false;
-	}
 	return true;
-	var dt = document.forms["ff"]["db"].value;
-	if(!validDate(dt))
-	{
-		alert("Date of Birth must be provided and should be at least 20 years old");
-		return false;
-	}
 }
+

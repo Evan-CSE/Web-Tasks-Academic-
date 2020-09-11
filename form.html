@@ -1,68 +1,79 @@
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-	<form method="post" action="show.php">
-		<table>
-			<tr>
-				<td>Name</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr>
-				<td>Phone Number</td>
-				<td><input type="text" name="phn"></td>
-			</tr>
-			<tr>
-				<td>Department</td>
-				<td>
-					<select name="dept">
-					<option>CSE</option>
-					<option>EEE</option>
-					<option>ESE</option>
-				</td>
-			</tr>
-				<tr>
-				<td>Blood Group</td>
-				<td>
-					<select name="bld">
-					<option>A+</option>
-					<option>A-</option>
-					<option>AB+</option>
-					<option>AB-</option>
-					<option>B-</option>
-					<option>B+</option>
-					<option>O+</option>
-					<option>O-</option>
-				</td>
-			</tr>
-			<tr>
-				<td>Date of birth:</td>
-				<td><input type="date" name="db"></td>
-			</tr>
-			<tr>
-				<td>
-					Gender:
-				</td>
-				<td>
-					<select name="gender">
-						<option>Male</option>
-						<option> Female</option>
-						<option> Not prefered to say</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Write about yourself:</td>
-				<td><input type="comment" name="profile"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-					<input type="submit">
-				</td>
-			</tr>
-		</table>
+<head>
+<title>
+Js validation
+</title>
+
+</head>
+<body bgcolor="A32B11">
+	<marquee>
+	Employe Profile Validation using JS
+	</marquee>
+	<br>
+	
+		<form onsubmit="return valid()" name="frm"  method="get" class="container">
+		<fieldset>
+			<legend>
+				Professional Information:
+			</legend>
+				Name:
+			<input type="text" name="nm">
+			<br>
+			Location:
+			<input type="text" name="loc">
+			<br>
+			Age:
+			<input type="number" min="30" max="60" value="30" name="age">
+			<br>
+			Email:
+			<input type="email" name="mail"><br>
+		</fieldset>
+		<br><br>
+		<fieldset color="red">
+			<legend>
+				Personal Information:
+			</legend>
+			Phone:
+			<input type="txt" type="text" name="num"><br>
+			Date of birth:
+			<input type="date" min="1990-01-01" max="2005-01-01" name="db"><br>
+			Home District:
+			<input type="text" name="hmd"><br>
+			Blood Group:
+			<select name="bld">
+			<option>
+				A+
+			</option>
+			<option>
+				Ab+
+			</option>
+			<option>
+				B+
+			</option>
+			<option>
+				O+
+			</option>
+			<option>
+				A-
+			</option>
+			<option>
+				Ab-
+			</option>
+			<option>
+				B-
+			</option>
+			<option>
+				O-
+			</option>
+			</select>
+		</fieldset>
+		<br><br>
+		<input type="submit" value="Submit">
 	</form>
-	</body>
+	
+	<br>
+<script
+type="text/javascript" src="form.js"></script>
+</body>
+
 </html>

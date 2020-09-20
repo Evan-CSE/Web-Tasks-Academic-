@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>
+PHP validation
+</title>
+
+</head>
+<body bgcolor="A32B11">
+	<marquee>
+	Employe Profile Validation using PHP
+	</marquee>
+	<br>
+
+		<form action="9-2.php" name="frm"  method="post" class="container">
+		<fieldset>
+			<legend>
+				Professional Information:
+			</legend>
+				Name:
+			<input type="text" name="nm">
+			<br>
+			Location:
+			<input type="text" name="loc">
+			<br>
+			Age:
+			<input type="number" min="30" max="60" value="30" name="age">
+			<br>
+			Email:
+			<input type="email" name="mail"><br>
+		</fieldset>
+		<br><br>
+		<fieldset color="red">
+			<legend>
+				Personal Information:
+			</legend>
+			Phone:
+			<input type="txt" type="text" name="num"><br>
+			Date of birth:
+			<input type="date" min="1990-01-01" max="2005-01-01" name="db"><br>
+			Home District:
+			<input type="text" name="hmd"><br>
+			Blood Group:
+			<select name="bld">
+			<option>
+				A+
+			</option>
+			<option>
+				Ab+
+			</option>
+			<option>
+				B+
+			</option>
+			<option>
+				O+
+			</option>
+			<option>
+				A-
+			</option>
+			<option>
+				Ab-
+			</option>
+			<option>
+				B-
+			</option>
+			<option>
+				O-
+			</option>
+			</select>
+		</fieldset>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<br>
+<script
+type="text/javascript" src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <link rel = 'stylesheet' href='11.css'>
+    </head>
+    <body>
+    <marquee>
+        Write a PHP program that will store all data in a database retrieving from a form containing electronics product info.
+    </marquee>
+    
+        <table class = 'cen'>
+            <form method="POST" action = "11.php" >
+            <tr>
+                <td>Product Id:</td>
+                <td><input type='number' name='pd'></td>
+            </tr>
+            <tr>
+                <td>
+                    Product name:
+                </td>
+                <td>
+                    <input type = 'text' name='pn'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Price:
+                </td>
+                <td>
+                    <input type = 'number' min='10' name = 'prc'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Features:
+                </td>
+                <td>
+                    <input type = 'text-area' name='feat'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type = 'submit'>
+                </td>
+            </tr>
+            </form>
+
+        </table>
+        </body>
+</html>

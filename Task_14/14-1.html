@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<marquee>
+		Developing a web page for graduate admission with retrieval of necessary data
+	</marquee>
+	<form action="14-2.php" method="POST">
+		<fieldset>
+		<table>
+				<legend>
+					Educational Background
+				</legend>
+			<tr><td>Name</td>
+		<td><input type="text" name="name"></td>
+		</tr><tr>
+		<td>SSC Roll:</td>
+		<td>
+			<input type="number" name="sroll">
+		</td>
+		</tr><tr>
+		<td>HSC Roll:</td>
+		<td>
+			<input type="number" name="hroll">
+		</td>
+		</tr><tr>
+		<td>Registration Number:</td>
+		<td>
+			<input type="number" name="reg">
+		</td>
+		</tr><tr>
+		<td>Board:</td>
+		<td>
+			<select name='board'>
+				<option>
+					Dhaka
+				</option>
+				<option>
+					Chittagong
+				</option>
+				<option>
+					Rajshahi
+				</option>
+				<option>
+					Comilla
+				</option>
+				<option>
+					Sylhet
+				</option>
+				<option>
+					Barisal
+				</option>
+				<option>
+					Mymensingh
+				</option>
+			</select>
+		</td>
+		</tr><tr>
+			<td>HSC Result (in Grading System) GPA: (GPA Below 3.5 is not allowed)</td>
+			<td>
+				<input type="number" name="hgpa" step="0.01" min="3.5" max="5.00">
+			</td>
+		</tr><tr>
+			<td>SSC Result (in Grading System) GPA: (GPA Below 3.00 is not allowed)</td>
+			<td>
+				<input type="number" name="sgpa" step="0.01" min="3.0" max="5.00">
+			</td>
+		</tr>
+		</table>
+		</fieldset><br><br>
+		<fieldset>
+			<legend>
+				Personal information
+			</legend>
+			<table>
+				<tr>
+					<td>
+						Father's Name:
+					</td>
+					<td>
+						<input type="text" name="fname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Mother's Name:
+					</td>
+					<td>
+						<input type="text" name="mname">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone Number:
+					</td>
+					<td>
+						<input type="text" name="phone">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<input type="submit" name="">
+	</form>
+</body>
+</html>
